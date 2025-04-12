@@ -1,4 +1,4 @@
-import { ACTIONS, type Action } from "./App";
+import { ACTIONS, type Action } from "../App";
 
 interface OperationButtonProps {
 	dispatch: React.Dispatch<Action>;

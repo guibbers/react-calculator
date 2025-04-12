@@ -1,4 +1,4 @@
-import { ACTIONS } from "./App";
+import { ACTIONS } from "../App";
 
 type Action = {
 	type: string;

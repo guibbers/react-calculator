@@ -1,7 +1,8 @@
 import { useReducer } from "react";
-import DigitButton from "./DigitButton";
+import DigitButton from "./components/DigitButton";
+import Display from "./components/Display";
 import "./styles.css";
-import OperationButton from "./OperationButton";
+import OperationButton from "./components/OperationButton";
 
 export const ACTIONS = {
 	ADD_DIGIT: "add-digit",
@@ -175,12 +176,11 @@ function App() {
 
 	return (
 		<div className="calculator-grid">
-			<div className="output">
-				<div className="previous-operand">
-					{formatOperand(previousOperand)} {operation}
-				</div>
-				<div className="current-operand">{formatOperand(currentOperand)}</div>
-			</div>
+			<Display
+				previousOperand={previousOperand}
+				currentOperand={currentOperand}
+				operation={operation}
+			/>
 			<button
 				type="button"
 				className="span-two"
