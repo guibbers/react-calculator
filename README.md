@@ -52,4 +52,4 @@ yarn dev
 ```bash
 http://localhost:5173
 ```
-### Este projeto usa [Vite](vite.dev) para um ambiente de desenvolvimento rápido.
+### Este projeto usa [Vite](https://vite.dev/) para um ambiente de desenvolvimento rápido.
